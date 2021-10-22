@@ -1,3 +1,3 @@
 <p class="page">
-<app-page *ngFor="let page of pages" [page]="page"></app-page>
+<app-page *ngFor="let page of pages" [page]="page" (lift)="catchPage($event)"></app-page>
 </p>

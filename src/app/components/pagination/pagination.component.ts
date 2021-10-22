@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-pagination',
@@ -7,6 +7,9 @@ import {Component, OnInit} from '@angular/core';
 })
 export class PaginationComponent implements OnInit {
   pages = [1, 2, 3]
+  selectedPage: number
+  @Output()
+  lift = new EventEmitter
 
   constructor() {
   }
@@ -14,4 +17,8 @@ export class PaginationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  catchPage(value: number) {
+    this.selectedPage = value
+    this.lift.emit(this.selectedPage)
+  }
 }

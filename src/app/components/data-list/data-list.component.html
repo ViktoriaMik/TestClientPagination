@@ -1,2 +1,2 @@
 <app-data-item *ngFor="let item of data" [dataItem]="item"></app-data-item>
-<app-pagination></app-pagination>
+<app-pagination (lift)="catchData($event)"></app-pagination>

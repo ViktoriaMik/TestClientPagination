@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-page',
@@ -10,14 +10,18 @@ export class PageComponent implements OnInit {
   page: number
   selectedPage:number
 
+  @Output()
+  lift=new EventEmitter()
+
   constructor() {
   }
 
   ngOnInit(): void {
   }
   onPage(page:number):void{
-    console.log(page)
     this.selectedPage=page
+    console.log(page, this.selectedPage )
+    this.lift.emit(this.selectedPage)
   }
 
 }

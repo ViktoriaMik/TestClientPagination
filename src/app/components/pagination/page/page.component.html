@@ -1,1 +1,2 @@
-<p class='page' (click)="onPage(page)">{{page}}</p>
+<div [ngClass]="{'page': page === selectedPage}" (click)="onPage(page)">
+<p [ngClass]="{'page1': page !== selectedPage}">{{page}}</p></div>
