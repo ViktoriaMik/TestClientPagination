@@ -10,6 +10,7 @@ import { DataListComponent } from './components/data-list/data-list.component';
 import { DataItemComponent } from './components/data-list/data-item/data-item.component';
 import {RouterModule, Routes} from "@angular/router";
 import { DataDatailsComponent } from './components/data-datails/data-datails.component';
+import { PageComponent } from './components/pagination/page/page.component';
 
 const routes:Routes=[
   {path:'data', component:DataListComponent},
@@ -21,7 +22,8 @@ const routes:Routes=[
     PaginationComponent,
     DataListComponent,
     DataItemComponent,
-    DataDatailsComponent
+    DataDatailsComponent,
+    PageComponent
   ],
   imports: [
     BrowserModule,

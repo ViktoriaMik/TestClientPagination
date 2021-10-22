@@ -10,6 +10,7 @@ import {IData} from "../../models/data";
 export class DataListComponent implements OnInit {
   data: IData[];
 
+
   constructor(private dataService: DataService) {
 
   }
