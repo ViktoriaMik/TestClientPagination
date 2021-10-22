@@ -6,7 +6,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./pagination.component.css']
 })
 export class PaginationComponent implements OnInit {
-  pages = [1, 2, 3, 4, 5,]
+  pages = [1, 2, 3]
 
   constructor() {
   }
