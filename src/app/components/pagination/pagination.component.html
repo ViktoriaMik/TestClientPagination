@@ -1,2 +1,4 @@
-<div [class.active]="page===selectedPage" (click)="setSelectedpage(page)" *ngFor="let page of pages">{{page}}</div>
+<a [class.active]="page===selectedPage"
+     class="page"
+     (click)="setSelectedpage(page)" *ngFor="let page of pages">{{page}}</a>
 

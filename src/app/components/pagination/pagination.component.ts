@@ -7,7 +7,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 })
 export class PaginationComponent implements OnInit {
   pages = [1, 2, 3]
-  selectedPage: number =1
+  selectedPage: number = 1
   @Output()
   lift = new EventEmitter
 
@@ -17,15 +17,10 @@ export class PaginationComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // catchPage(value: number) {
-  //   this.selectedPage = value
-  //   this.lift.emit(this.selectedPage)
-  // }
-
-  setSelectedpage(page:number){
+  setSelectedpage(page: number) {
     console.log(page)
-    this.selectedPage=page
-this.lift.emit(this.selectedPage)
+    this.selectedPage = page
+    this.lift.emit(this.selectedPage)
 
   }
 }

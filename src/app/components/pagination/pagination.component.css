@@ -1,7 +1,16 @@
-.page{
-  display: flex;
+.page {
+  margin-left: 15px;
+  font-size: 25px;
+  color: rgb(127, 154, 127);
+
 
 }
-.active{
+
+.active {
   font-weight: bold;
+  color: rgb(81, 104, 81);
+}
+
+a{
+  margin-top: 30px;
 }
