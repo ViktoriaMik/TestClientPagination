@@ -1,3 +1,2 @@
-<p class="page">
-<app-page *ngFor="let page of pages" [page]="page" (lift)="catchPage($event)"></app-page>
-</p>
+<div [class.active]="page===selectedPage" (click)="setSelectedpage(page)" *ngFor="let page of pages">{{page}}</div>
+

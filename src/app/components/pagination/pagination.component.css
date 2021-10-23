@@ -2,3 +2,6 @@
   display: flex;
 
 }
+.active{
+  font-weight: bold;
+}
