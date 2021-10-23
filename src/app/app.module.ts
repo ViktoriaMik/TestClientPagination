@@ -13,6 +13,7 @@ import { DataDatailsComponent } from './components/data-datails/data-datails.com
 
 
 const routes:Routes=[
+  {path:'',redirectTo:'data',pathMatch:'full'},
   {path:'data', component:DataListComponent},
   {path:'data/:id', component:DataDatailsComponent}
 ]
